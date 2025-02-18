@@ -17,9 +17,22 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Добавление анимации градиента */
+@keyframes gradientAnimation {
+    0% {
+        background-color: #6C63FF;
+    }
+    50% {
+        background-color: #2A2A2A;
+    }
+    100% {
+        background-color: #6C63FF;
+    }
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--background-color);
+    background-color: rgba(18, 18, 18, 0.95);
     color: var(--text-color);
     line-height: 1.6;
 }
@@ -100,6 +113,9 @@ section {
     padding: 3rem 5%;
     max-width: 1200px;
     margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
 }
 
 #hero {
@@ -110,11 +126,23 @@ section {
     align-items: center;
     text-align: center;
     padding-top: 80px;
+    margin-bottom: 0.5rem;
+    animation-delay: 0.1s;
 }
 
-h1 {
+h1, h2 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h2 {
@@ -130,13 +158,13 @@ h2 {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: var(--transition);
+    transition: transform 0.3s ease;
     margin-top: 2rem;
 }
 
 .cta-button:hover {
     background: #5550d0;
-    transform: translateY(-2px);
+    transform: scale(1.05);
 }
 
 /* О нас */
@@ -171,11 +199,14 @@ h2 {
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    transition: var(--transition);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
 .service-card i {
@@ -243,11 +274,12 @@ textarea {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: var(--transition);
+    transition: transform 0.3s ease;
 }
 
 .submit-button:hover {
     background: #5550d0;
+    transform: scale(1.05);
 }
 
 /* Подвал */
@@ -269,6 +301,40 @@ footer {
     margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid #333;
+}
+
+/* Стили для секции портфолио */
+#portfolio {
+    padding: 3rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    animation-delay: 0.5s;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-item {
+    background: var(--card-background);
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
 }
 
 /* Медиа запросы */
@@ -296,4 +362,13 @@ footer {
     h2 {
         font-size: 1.8rem;
     }
+}
+
+#about {
+    padding: 3rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
 } 
