@@ -342,6 +342,10 @@ footer {
 
 /* Медиа запросы */
 @media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
     .nav-links {
         display: none;
     }
@@ -358,12 +362,40 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .process-timeline {
+        grid-template-columns: 1fr;
+    }
+
     h1 {
         font-size: 2rem;
     }
 
     h2 {
         font-size: 1.8rem;
+    }
+
+    .faq-question {
+        padding: 0.5rem;
+    }
+
+    .faq-answer {
+        padding: 0.5rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+    }
+
+    #contact {
+        padding: 2rem 1rem;
+    }
+
+    footer {
+        padding: 2rem 1rem;
     }
 }
 
@@ -416,4 +448,10 @@ footer {
 
 .faq-question i.rotated {
     transform: rotate(180deg); /* Поворот на 180 градусов */
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
 } 
