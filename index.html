@@ -18,10 +18,10 @@
         <nav>
             <div class="logo">MINIAPPIFY</div>
             <div class="nav-links">
-                <a href="#services">Mini Apps</a>
+                <a href="#telegram-mini-app">Mini Apps</a>
                 <a href="#about">Наши преимущества</a>
                 <a href="#process">Этапы работы</a>
-                <a href="#portfolio">Портфолио/a>
+                <a href="#portfolio">Портфолио</a>
                 <a href="#contact">Обсудить проект</a>
             </div>
             <div class="burger-menu">
@@ -39,11 +39,16 @@
             <a href="#contact" class="cta-button">Обсудить проект</a>
         </section>
 
+        <section id="telegram-mini-app">
+            <h2>Что такое Telegram Mini App?</h2>
+            <p>Telegram Mini Apps — это легкие веб-приложения, которые работают внутри мессенджера Telegram. Они позволяют пользователям взаимодействовать с сервисами и получать информацию, не покидая приложение. Mini Apps могут быть использованы для различных целей, включая игры, онлайн-магазины, сервисы для общения и многое другое. Благодаря интеграции с Telegram, такие приложения обеспечивают быстрый доступ к функционалу и удобный интерфейс для пользователей.</p>
+        </section>
+
         <section id="about">
             <h2>Наши преимущества</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Благодаря небольшому количеству разработчиков и правильно настроенной коммуникации в команде, мы можем выполнять ваша заказы быстро и по доступной всем цене. </p>
+                    <p>Благодаря небольшому количеству разработчиков и правильно настроенной коммуникации в команде, мы можем выполнять ваши заказы быстро и по доступной всем цене.</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat">
@@ -62,34 +67,13 @@
             </div>
         </section>
 
-        <section id="services">
-            <h2>Наши услуги</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-globe"></i>
-                    <h3>Веб-разработка</h3>
-                    <p>Создание современных и адаптивных веб-сайтов</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Мобильные приложения</h3>
-                    <p>Разработка нативных и кроссплатформенных приложений</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-server"></i>
-                    <h3>Микросервисы</h3>
-                    <p>Проектирование и разработка микросервисной архитектуры</p>
-                </div>
-            </div>
-        </section>
-
         <section id="process">
             <h2>Этапы работы</h2>
             <div class="process-timeline">
                 <div class="process-step">
                     <div class="step-number">1</div>
-                    <h3>Обсуждение</h3>
-                    <p>Анализ требований и целей проекта</p>
+                    <h3>Обсуждение и оценка проекта</h3>
+                    <p>Анализ требований и целей проекта, </p>
                 </div>
                 <div class="process-step">
                     <div class="step-number">2</div>
@@ -104,37 +88,37 @@
                 <div class="process-step">
                     <div class="step-number">4</div>
                     <h3>Запуск</h3>
-                    <p>Развертывание и поддержка проекта</p>
+                    <p>Развертывание на сервере</p>
                 </div>
             </div>
         </section>
 
         <section id="portfolio">
-            <h2>Наше портфолио</h2>
+            <h2>Примеры работ</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <video controls>
-                        <source src="path/to/video1.mp4" type="video/mp4">
+                        <source src="video/video1.mp4" type="video/mp4">
                         Ваш браузер не поддерживает видео.
                     </video>
-                    <h3>Проект 1</h3>
-                    <p>Краткое описание проекта 1.</p>
+                    <h3>Red Hat History</h3>
+                    <p>Игра - квест с возможностью выбора дальнейшего развития событий</p>
                 </div>
                 <div class="portfolio-item">
                     <video controls>
-                        <source src="path/to/video2.mp4" type="video/mp4">
+                        <source src="video/video2.mp4" type="video/mp4">
                         Ваш браузер не поддерживает видео.
                     </video>
-                    <h3>Проект 2</h3>
-                    <p>Краткое описание проекта 2.</p>
+                    <h3>Memory Game</h3>
+                    <p>Развлекательная игра на развитие памяти с любыми фото на карточках. На примере фото наш СЕО в молодости)</p>
                 </div>
                 <div class="portfolio-item">
                     <video controls>
-                        <source src="path/to/video3.mp4" type="video/mp4">
+                        <source src="video/video3.mp4" type="video/mp4">
                         Ваш браузер не поддерживает видео.
                     </video>
-                    <h3>Проект 3</h3>
-                    <p>Краткое описание проекта 3.</p>
+                    <h3>Profession Test</h3>
+                    <p>Лаконичный тест на выбор будущей профессии.</p>
                 </div>
             </div>
         </section>
@@ -157,23 +141,85 @@
                 <button type="submit" class="submit-button">Отправить</button>
             </form>
         </section>
+
+        <section id="faq">
+            <h2>Популярные вопросы</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Что такое Telegram Mini Apps?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Telegram Mini Apps — это сайт, адаптированные под мобильные устройства, открывающийся в WebView(окошко внутри мессенджера).</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Как заказать разработку Mini App?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Вы можете обсудить проект, заполнив форму на нашем сайте или связавшись с нами по электронной почте, номеру телефона или в Telegram.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Сколько времени занимает разработка?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Сроки зависят от сложности проекта, но весь процесс выполнения заказа не займет более 3 дней.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Нужно ли платить за домен и сервер?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Да, домен и сервер входят в стоимость заказа. Мы оплачиваем домен на год, а сервер на 1 месяц. Так же мы вам расскажем, как это в дальнейшем делать самостоятельно. </p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <h3>Сколько в среднем стоит один заказ?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>В среднем цена выполнения одного заказа составляет 10000 рублей</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-info">
-                <h3>DEVOX</h3>
-                <p>Создаем цифровые решения для вашего бизнеса</p>
+                <h3>MiniAppify</h3>
+                <p>Разработка современных Telegram Mini Apps под ваши задачи</p>
             </div>
             <div class="footer-contact">
-                <p>Email: devox_studio@mail.ru</p>
+                <p>Email: miniappify@mail.ru</p>
+                <p>Telegram: https://t.me/Klaus_Develop</p>
+                <p>Номер телефона: +7(906)034-28-66</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 DEVOX. Все права защищены.</p>
+            <p>&copy; 2025 MiniAppify. Все права защищены.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector("i");
+            
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+            
+            // Переключение класса для стрелочки
+            icon.classList.toggle("rotated");
+        }
+    </script>
 </body>
 </html>

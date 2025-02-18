@@ -321,16 +321,19 @@ footer {
 .portfolio-item {
     background: var(--card-background);
     border-radius: 10px;
-    padding: 1rem;
+    padding: 0.5rem;
     transition: transform 0.3s ease;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.5s forwards;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
-.portfolio-item img {
+.portfolio-item video {
     width: 100%;
-    border-radius: 10px;
+    height: auto;
+    border-radius: 5px;
 }
 
 .portfolio-item:hover {
@@ -371,4 +374,46 @@ footer {
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 0.5s forwards;
+}
+
+#faq {
+    padding: 3rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--card-background);
+    border-radius: 10px;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.faq-question:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.faq-answer {
+    display: none; /* Скрываем ответ по умолчанию */
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+
+.faq-question i {
+    transition: transform 0.3s ease; /* Плавный переход для поворота */
+}
+
+.faq-question i.rotated {
+    transform: rotate(180deg); /* Поворот на 180 градусов */
 } 
