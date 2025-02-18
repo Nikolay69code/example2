@@ -94,20 +94,6 @@ nav {
     color: var(--primary-color);
 }
 
-.burger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.burger-menu span {
-    width: 25px;
-    height: 3px;
-    background: var(--text-color);
-    margin: 2px;
-    transition: var(--transition);
-}
-
 /* Секции */
 section {
     padding: 3rem 5%;
@@ -348,10 +334,6 @@ footer {
 
     .nav-links {
         display: none;
-    }
-
-    .burger-menu {
-        display: flex;
     }
 
     .about-content {
