@@ -3,8 +3,8 @@ const TelegramBot = require('node-telegram-bot-api');
 const app = express();
 
 // Замените на ваш токен бота и ID чата
-const TELEGRAM_TOKEN = '7690897426:AAFd796vNh5w3YhnrSfsZKDOzWM8bDhO5I8';
-const CHAT_ID = '8195408385';
+const TELEGRAM_TOKEN = '8146131784:AAEdYQLp5ihXVv3uLdloNl125_eKC0cMLG4';
+const CHAT_ID = '1557542470';
 
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: false });
 
