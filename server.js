@@ -6,7 +6,7 @@ const TELEGRAM_TOKEN = '7317091729:AAGv89OWMPmxpKeYW8q7-Q6NpvHRfMTIM0I';
 const CHAT_ID = '8195408385';
                  
 
-const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: false });
+const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 
 app.use(express.json());
 app.use(express.static('.'));
